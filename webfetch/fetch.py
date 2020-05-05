@@ -2,7 +2,6 @@ from bs4 import BeautifulSoup
 import urllib.request
 import re
 
-# example used in screenshots: https://arstechnica.com/gaming/2020/05/steam-data-points-to-massive-half-life-bump-in-vr-adoption/
 inputLink = input("input link: ")
 html_page = urllib.request.urlopen(inputLink)
 soup = BeautifulSoup(html_page,"lxml")
